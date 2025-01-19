@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Paper - Papeis de parede animados</title>
+</head>
+<body>
+    <img src="electric-socket-plug-connection-disconnection-600nw-1504704968.webp" id="off">
+    <h1 id="message">Site em desenvolvimento...<br>Por favor aguarde</h1>
+</body>
+
+<style>
+    #off {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+    #message {
+        font-family: arial;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    @media screen and (max-width: 767px) {
+        #message {
+            position: absolute;
+            left: 180pt;
+            top: 15%;
+            font-size: 40px;
+            text-align: center;
+        }
+        #off {
+            position: absolute;
+            top: 65%;
+        }
+    }
+</style>
+</html>
